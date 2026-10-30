@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mentalidade de Elite — um guia prático sobre disciplina, hábitos, foco e autocontrole.">
+  <meta name="theme-color" content="#120609">
+  <title>Mentalidade de Elite | Disciplina. Foco. Evolução.</title>
+  <style>
+    :root {
+      --black: #10070a; --wine: #310b16; --wine2: #4b1020;
+      --red: #e3263f; --red2: #ff4057; --cream: #f8edf0;
+      --muted: #d5b9c0; --line: rgba(255,255,255,.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--cream);
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(174,20,48,.28), transparent 42%),
+        linear-gradient(180deg, #16070c 0%, var(--black) 55%, #19070d 100%);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: auto; }
+    header { padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .nav { display:flex; justify-content:space-between; align-items:center; gap:18px; }
+    .brand { font-weight:900; letter-spacing:.16em; font-size:.78rem; }
+    .brand span { color:var(--red2); }
+    .tag { color:var(--muted); font-size:.72rem; letter-spacing:.13em; text-transform:uppercase; }
+    .hero { padding: 92px 0 76px; text-align:center; position:relative; }
+    .eyebrow {
+      display:inline-block; padding:9px 14px; border:1px solid rgba(255,64,87,.45);
+      border-radius:99px; color:#ff9aa8; background:rgba(120,10,30,.2);
+      font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:800;
+    }
+    h1 { margin:24px 0 12px; font-size:clamp(3rem, 9vw, 6.6rem); line-height:.9; letter-spacing:-.065em; font-weight:950; }
+    h1 span { display:block; color:var(--red2); text-shadow:0 10px 45px rgba(227,38,63,.25); }
+    .subtitle { max-width:650px; margin:22px auto 0; color:#e3cbd1; font-size:clamp(1rem,2vw,1.2rem); line-height:1.7; }
+    .hero-line { width:72px; height:3px; margin:30px auto 0; background:linear-gradient(90deg,var(--wine),var(--red2)); border-radius:9px; }
+    .cta {
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      margin-top:34px; padding:17px 28px; border-radius:10px;
+      color:white; text-decoration:none; font-weight:900; letter-spacing:.04em;
+      background:linear-gradient(135deg,#a80f2b,var(--red),#ff5268);
+      box-shadow:0 12px 35px rgba(227,38,63,.25); transition:.2s transform,.2s box-shadow;
+    }
+    .cta:hover { transform:translateY(-3px); box-shadow:0 16px 42px rgba(227,38,63,.38); }
+    .note { color:#b99aa2; font-size:.78rem; margin-top:13px; }
+    section { padding:66px 0; }
+    .section-kicker { color:#ff7185; text-transform:uppercase; letter-spacing:.18em; font-size:.72rem; font-weight:900; }
+    h2 { font-size:clamp(2rem,5vw,3.2rem); line-height:1.05; letter-spacing:-.045em; margin:12px 0 16px; }
+    .intro { color:var(--muted); max-width:650px; line-height:1.75; }
+    .grid { display:grid; grid-template-columns:repeat( auto-fit, minmax(220px,1fr)); gap:14px; margin-top:30px; }
+    .card {
+      padding:22px; min-height:150px; border:1px solid var(--line); border-radius:14px;
+      background:linear-gradient(145deg,rgba(77,15,32,.72),rgba(28,8,14,.78));
+    }
+    .number { color:var(--red2); font-size:.75rem; font-weight:900; letter-spacing:.12em; }
+    .card h3 { margin:12px 0 8px; font-size:1.05rem; }
+    .card p { margin:0; color:var(--muted); line-height:1.6; font-size:.9rem; }
+    .offer {
+      border:1px solid rgba(255,64,87,.35); border-radius:18px; padding:clamp(24px,5vw,48px);
+      text-align:center; background:
+       radial-gradient(circle at 50% 0%,rgba(227,38,63,.22),transparent 60%),
+       linear-gradient(145deg,#310b16,#18070d);
+    }
+    .offer h2 { margin-top:10px; }
+    .bullets { display:grid; gap:12px; max-width:520px; margin:28px auto; text-align:left; }
+    .bullets div { color:#f0dce1; }
+    .bullets b { color:var(--red2); margin-right:9px; }
+    footer { padding:28px 0 38px; border-top:1px solid var(--line); color:#a98a92; text-align:center; font-size:.78rem; }
+    @media (max-width:600px) { .hero { padding:70px 0 56px; } section { padding:48px 0; } .tag { display:none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">MENTALIDADE <span>DE ELITE</span></div>
+      <div class="tag">Disciplina · Foco · Evolução</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Desenvolvimento pessoal</div>
+        <h1>MENTALIDADE <span>DE ELITE</span></h1>
+        <p class="subtitle">PARE DE ADIAR SUA EVOLUÇÃO. Um guia direto e prático para desenvolver hábitos, organizar objetivos e construir uma rotina com mais propósito.</p>
+        <div class="hero-line"></div>
+        <a class="cta" href="#conteudo">QUERO CONHECER O E-BOOK <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section id="conteudo">
+      <div class="wrap">
+        <div class="section-kicker">O que você vai encontrar</div>
+        <h2>Menos promessa.<br><span style="color:var(--red2)">Mais prática.</span></h2>
+        <p class="intro">Um material para ler no seu ritmo, refletir e testar pequenas mudanças possíveis no cotidiano — sem fórmulas mágicas ou cobrança de perfeição.</p>
+        <div class="grid">
+          <article class="card"><div class="number">01 / MENTALIDADE</div><h3>Construa uma visão mais forte</h3><p>Entenda como suas ideias sobre si mesmo influenciam suas escolhas.</p></article>
+          <article class="card"><div class="number">02 / DISCIPLINA</div><h3>Aja mesmo sem motivação</h3><p>Crie acordos realistas e aprenda a começar por passos pequenos.</p></article>
+          <article class="card"><div class="number">03 / FOCO</div><h3>Reduza as distrações</h3><p>Organize períodos de atenção e descubra o que atrapalha sua concentração.</p></article>
+          <article class="card"><div class="number">04 / HÁBITOS</div><h3>Crie uma rotina possível</h3><p>Use pistas, ambiente e repetição para apoiar hábitos saudáveis.</p></article>
+          <article class="card"><div class="number">05 / AUTOCONTROLE</div><h3>Escolha como responder</h3><p>Reconheça emoções e pratique pausas antes de tomar decisões.</p></article>
+          <article class="card"><div class="number">06 / PLANO</div><h3>30 dias de prática</h3><p>Um roteiro flexível com atividades e páginas para reflexão.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="offer">
+          <div class="section-kicker">Seu próximo passo</div>
+          <h2>COMECE A CONSTRUIR<br><span style="color:var(--red2)">SUA PRÓPRIA EVOLUÇÃO.</span></h2>
+          <p class="intro" style="margin:0 auto">Acesse o guia digital Mentalidade de Elite e avance no seu ritmo.</p>
+          <div class="bullets">
+            <div><b>✓</b> 8 capítulos sobre desenvolvimento pessoal</div>
+            <div><b>✓</b> Exercícios e páginas de anotações</div>
+            <div><b>✓</b> Plano prático e flexível de 30 dias</div>
+          </div>
+          <a class="cta" href="https://pay.kiwify.com.br/67ykajl" target="_blank" rel="noopener noreferrer">QUERO MEU E-BOOK</a>
+          <div class="note">Pagamento processado com segurança pela Kiwify.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">MENTALIDADE DE ELITE © 2026 · Conteúdo educativo. Resultados e experiências variam de pessoa para pessoa.</div>
+  </footer>
+</body>
+</html>
